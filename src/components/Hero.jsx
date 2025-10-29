@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
+import profilePic from "../assets/sajiprofile.png";
 
 const Hero = () => {
   return (
@@ -9,9 +10,9 @@ const Hero = () => {
       className="flex flex-col justify-center items-center h-screen bg-gradient-to-br from-teal-100 to-white text-center px-4"
     >
       <motion.img
-        src="src/assets/sajiprofile.png"
+        src={profilePic}
         alt="Sajitha"
-        className="w-40 h-43 rounded-full shadow-lg mb-6"
+        className="w-40 h-42 rounded-full shadow-lg mb-6"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
